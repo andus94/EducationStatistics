@@ -1,0 +1,25 @@
+---
+title: "EducationStatistics"
+author: "Andus Kong"
+date: "November 7, 2018"
+output: html_document
+---
+
+```{r}
+# Load Libraries
+library(dplyr)
+library(data.table)
+library(plyr)
+library(ggplot2)
+
+# Read in Data
+df <- fread(input = "https://www.dropbox.com/s/4xc1ffo3jzo5gmw/EdStatsData.csv?dl=1")
+dfCountry <- fread(input = "https://www.dropbox.com/s/q8zmlfyb9kygnx9/EdStatsCountry.csv?dl=1")
+```
+
+```{r}
+# Overview
+head(df)
+head(dfCountry)
+```
+
